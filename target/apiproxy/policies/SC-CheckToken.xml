@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ServiceCallout async="false" continueOnError="false" enabled="true" name="SC-CheckToken">
+    <DisplayName>SC-CheckToken</DisplayName>
+    <Properties/>
+    <Request clearPayload="true" variable="myRequest">
+        <Set>
+            <Headers>
+                <Header name="Authorization">{accessToken}</Header>
+            </Headers>
+            <Verb>GET</Verb>
+        </Set>
+        <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+    </Request>
+    <Response>calloutResponse</Response>
+    <HTTPTargetConnection>
+        <Properties/>
+        <URL>http://rocky-eyrie-99010.herokuapp.com/auth/check</URL>
+    </HTTPTargetConnection>
+</ServiceCallout>
