@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="7" name="my-guard-auth">
+    <Basepaths>/v1/my-guard-auth</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1652189845917</CreatedAt>
+    <CreatedBy>sek.sazonov@gmail.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>my-guard-auth</DisplayName>
+    <LastModifiedAt>1652731937158</LastModifiedAt>
+    <LastModifiedBy>sek.sazonov@gmail.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:56d027eb270965e9c8cfb697685e536f24617c4cc7f4a701560c7f0b2374541da7c4aa3e2c4b3eb2add1c849702f81515e1eecc1befa1f59fff73c5f13141db0:dc-1</ManifestVersion>
+    <Policies>
+        <Policy>AM-BadRequestError</Policy>
+        <Policy>AM-DefaultError</Policy>
+        <Policy>AM-NotFoundError</Policy>
+        <Policy>AM-UnauthorizedError</Policy>
+        <Policy>EV-ExtractToken</Policy>
+        <Policy>JS-PrintResponse</Policy>
+        <Policy>RF-TooManyRequests</Policy>
+        <Policy>SA-Block</Policy>
+        <Policy>SC-CheckToken</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>openapi://association.json</Resource>
+        <Resource>jsc://JavaScript-1.js</Resource>
+    </Resources>
+    <Spec>https://raw.githubusercontent.com/serjmain/my-guardAuth-postgre/dev/swagger.yaml</Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

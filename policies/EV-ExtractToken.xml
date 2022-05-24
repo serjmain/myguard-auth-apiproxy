@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables async="false" continueOnError="false" enabled="true" name="EV-ExtractToken">
+    <DisplayName>EV-ExtractToken</DisplayName>
+    <Source>request</Source>
+    <Header name="Authorization">
+        <Pattern ignoreCase="true">{accessToken}</Pattern>
+    </Header>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</ExtractVariables>

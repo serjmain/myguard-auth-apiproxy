@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="AM-BadRequestError" version="SHA-512:ace9daf7fbf71daba8a14d6351f824744c61888d4291351e67f52b0cf039f88676ff5cfb2934dcb68371841f92da6667ca064cdddae32f9b3898b36e792c6b24"/>
+        <VersionInfo resourceName="AM-DefaultError" version="SHA-512:dc82adf426e814ccd4bcda68d3a06d2133d097da7fb1bfcabcb3b840077f3af32a4995b3061a8545cbd45b26ed21f33080f8e5125ef596a15532d730f63ffa59"/>
+        <VersionInfo resourceName="AM-NotFoundError" version="SHA-512:01e43d1ec66d2b3e90c9bcbbef7407bd100359ac76e4a91b836e2489fab2dc6cdd6351396f2e7c86718a96fff6e1c2651d705bc44c971e89a18737f1d3e543a1"/>
+        <VersionInfo resourceName="AM-UnauthorizedError" version="SHA-512:9bbc63e9f07bf638752d6baa98ecd9f12a10402e3ad4c5b6d8de43d77943cd60d810e68dfebc21d87c9ec8c5396a581c10b48d1f8965f0cacea488870586d79e"/>
+        <VersionInfo resourceName="EV-ExtractToken" version="SHA-512:2ea146202131517cf7e95c362a3e801611bdaff0442293a23fe9ea3a7d833df2e8c33c86e9181551ab229ccbc7873b650b8e8fa0f51eb9c083bd9e619d01e8e7"/>
+        <VersionInfo resourceName="JS-PrintResponse" version="SHA-512:1518638679117783280e1ace5e9628c0736e3ab5c751fdb8cd8399787c9ce27ab17f846e1bf8e93ea10960d89820a0e1e17b708d554153804a64a71ed963d0fd"/>
+        <VersionInfo resourceName="RF-TooManyRequests" version="SHA-512:a5eca92f73663de6d4fb3997797d4afd029f1de5f39e44e0be4b80eb210ee581fb66e5a8a3b064cb313372af00135e5ccbace8f78fcb18f030a5cb56bb13c12a"/>
+        <VersionInfo resourceName="SA-Block" version="SHA-512:275ac07e694b72693b9cef19c14ffbe830ef87392ce4b817393632ff57f71d310f859f3a4f5400760cf7dfd87c8c545cf56eb2decce2c64196fb71abc5af253e"/>
+        <VersionInfo resourceName="SC-CheckToken" version="SHA-512:2175445f8fef63f6ee9441a82062d59d90461b127f5cc2c30ffe76ad5bab65f908dd5aa8921a45b8da2bd271b13a1ceb476fb55864e34f5136467cbcb66444ce"/>
+    </Policies>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:e29c75e65334322fcdf31020a1da342900ae72314b9a20ac48f51ce8a6ce6f8c75414ef35c693606e9b95e2b08d8fcd1cb7a84b877e86c712fff94aa50bdf580"/>
+    </ProxyEndpoints>
+    <Resources>
+        <VersionInfo resourceName="jsc://JavaScript-1.js" version="SHA-512:4c20ca9c7b9baadb294e55ea97b01f73dc6ccb52a5957dfedd8e4c9980e3ade96d10087407cdef3a6c8d79bbf6ae94be697ff9ffc6838407c3d70d0670e1ed8c"/>
+        <VersionInfo resourceName="openapi://association.json" version="SHA-512:404810951226cb065a855863518a76c1505cc2644c915db2a181e65972e89f0114ae28450f9ea57206e8209efe93bdbf92a4e5bcaa1690a3ee843afb9b7ba518"/>
+    </Resources>
+    <SharedFlows/>
+    <TargetEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:021288bc6d1e97f712e634317f5431bac22c1f86b82f4945396e96a7dcfc7d3f5cbde074f1d6409528329ac3ef238f4f5b369c9952a4ac86cf01c909163c9167"/>
+    </TargetEndpoints>
+</Manifest>
