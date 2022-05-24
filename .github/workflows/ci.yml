@@ -16,6 +16,6 @@ jobs:
         run: zip -r proxy.zip apiproxy
       - name: Upload API Proxy Bundle
         id: upload
-        run: "echo \"::set-output name=apigee-revision::$(curl --fail -X POST -H \"Content-Type: multipart/form-data\" -H \"Authorization: Bearer ${{steps.auth.outputs.access_token}}\" -F \"file=@proxy.zip\" \"https://apigee.googleapis.com/v1/organizations/${{secrets.APIGEE_ORG}}/apis?action=import&name=hello-world\" --silent | jq --raw-output .revision)\""
+        run: "echo \"::set-output name=apigee-revision::$(curl --fail -X POST -H \"Content-Type: multipart/form-data\" -F \"file=@proxy.zip\" \"https://opdk.neram.net/platform/edu/proxies?action=import&name=my-guard-auth\" --silent | jq --raw-output .revision)\""
       - name: Deploy Revision
         run: "curl --fail -X POST \"https://opdk.neram.net/platform/edu/proxies/my-guard-auth/overview/${{steps.upload.outputs.apigee-revision}}/deployments?override=true\""
