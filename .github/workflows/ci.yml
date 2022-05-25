@@ -7,7 +7,9 @@ on:
     branches: [ master ]
     
 jobs:
+
   build:
+  
     runs-on: ubuntu-latest
     
     steps:
@@ -15,4 +17,3 @@ jobs:
 
       - name: deploy on OPDK
         run: mvn install -Ptest -Dusername="sek.sazonov@gmail.com" -Dpassword="ey[)L7YR"
-        
