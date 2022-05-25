@@ -2,20 +2,17 @@ name: proxy-ci
 
 on:
   push:
-    branches:
-      - 'master'
-    paths:
-      - '.github/workflows/ci.yaml'
-      - 'src/**'
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+    
 jobs:
   build:
-    name: "deploy to test"
     runs-on: ubuntu-latest
+    
     steps:
-      - name: Create API bundle
-        run: zip -r proxy.zip apiproxy
-      - name: Upload API Proxy Bundle
-        id: upload
-        run: "echo \"::set-output name=apigee-revision::$(curl --fail -X POST -H \"Content-Type: multipart/form-data\" -F \"file=@proxy.zip\" \"https://opdk.neram.net/platform/edu/proxies?action=import&name=my-guard-auth\" --silent | jq --raw-output .revision)\""
-      - name: Deploy Revision
-        run: "curl --fail -X POST \"https://opdk.neram.net/platform/edu/proxies/my-guard-auth/overview/${{steps.upload.outputs.apigee-revision}}/deployments?override=true\""
+      - uses: actions/checkout@v3
+
+      - name: deploy on OPDK
+        run: mvn install -Ptest -Dusername="sek.sazonov@gmail.com" -Dpassword="ey[)L7YR"
+        
